@@ -1,1 +1,10 @@
 # FFT Header-only Library (Basic)
+This is a very basic library that uses an array of complex numbers in the implementation of Fast Fourier Transform (FFT).
+The algorithm used is the basic 2-radix algorithm that only supports inputs of sizes that match powers of two (i.e size = 2^N).
+
+## Functionalities 
+1) ArrToComplex -> Converts double arrays to an array of complex numbers and returns the pointer.
+2) ZeroPad -> Resizes the input complex array to the least power of 2 greater than it's current size.
+3) MagnitudeVec -> Calculates the magnitude of each element in the complex array and returns the pointer to the array.
+4) FFT -> 2-radix FFT algorithm based on recursion.
+5) IFFT -> 2-radix IFFT algorithm based on recursion.
