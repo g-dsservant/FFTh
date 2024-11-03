@@ -20,3 +20,11 @@ To use it in your own `.c` file:
    ```c
    #define FFTh_IMPLEMENTATION
    #include "FFT.h"
+
+3. While compiling, use:
+
+   `gcc -g -I<path/to/FFT.h> -o <output> <yourfile>.c`
+
+   Replace <path/to/FFT.h> with the actual path where you saved the header file, and <yourfile>.c with your source file name, including any additional flags you want to use.
+
+   
