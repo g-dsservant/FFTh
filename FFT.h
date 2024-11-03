@@ -9,11 +9,11 @@ typedef struct Complex {
 
 #define PI 3.14159265358979
 
-double*  MagnitudeVec(complex* input, size_t n);                                    //Computes Magnitudes of components of a complex Array/Vcetor
+double*  MagnitudeVec(complex* input, size_t n);                                    	//Computes Magnitudes of components of a complex Array/Vcetor
 complex* ArrToComplex(double arr[], size_t n, size_t stride, size_t* new_size);		//Converts a Real valued array to Complex datatype array where the size of Complex array is stored in 'new_size' 
-size_t   ZeroPad(complex** input, size_t n);											//Resizes the Complex array to the lowest power of 2 that is also greater than it's current size
-void     FFT(complex* input, size_t n);												//Computes DFT using FFT algorithm (in place) on inputs of size's of 2^N	
-void     IFFT(complex* input, size_t n);											//Computes IDFT using IFFT algorithm (in place) on inputs of size's of 2^N
+size_t   ZeroPad(complex** input, size_t n);						//Resizes the Complex array to the lowest power of 2 that is also greater than it's current size
+void     FFT(complex* input, size_t n);							//Computes DFT using FFT algorithm (in place) on inputs of size's of 2^N	
+void     IFFT(complex* input, size_t n);						//Computes IDFT using IFFT algorithm (in place) on inputs of size's of 2^N
 
 #endif //FFTh
 
